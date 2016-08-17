@@ -13,15 +13,15 @@ body {
   text-align: center;
 }
 
-.wrapper,
-.portfolio-page,
-.skills-page {	
-	display: block;	
-	width: 100%;
-	margin: 0 auto;
+.wrapper {		
 	background-color: #fff;
+	padding-top: 1em;		
+}
+
+.portfolio-page, 
+.skills-page {
 	padding: 1em;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 ol,
@@ -46,16 +46,16 @@ p {
 /* Flexbox Header and Footer Nav */ 
 
 .main-header,
-.nav{
+nav {
 	display: flex;
 	flex-direction: column;
 }
 
-.nav {
+nav li {
 	list-style-type: none;
 	flex: 1;
 	justify-content: space-around;
-	margin-top: 1.5em;	
+	margin-top: .5em;	
 	background-color: #fff;
 }
 
@@ -73,7 +73,7 @@ p {
 /* Header and Footer Nav Style */
 
 
-.nav a,
+nav a,
 .footer-nav a,
 .back-to-top a {
 	display: block;
@@ -130,6 +130,17 @@ p {
 	padding-bottom: 1em;
 }
 
+.portfolio-page,
+a.portfolio_link {
+	background-color: #c7b5ed;
+	color: #495f73;
+}
+
+.skills-page,
+a.skills_link {
+	background-color: #a1eddf;	
+	color: #495f73;
+}
 
 /* Contact Style */
 #contact {
@@ -138,6 +149,14 @@ p {
 
 #contact p {
 	padding: 0 1em;
+}
+
+.phone,
+.email {
+	color: #495f73;
+	text-decoration: none;
+	font-weight: 800;
+	padding-left: 1em;
 }
 
 /* Horizontal Line Style */
@@ -157,20 +176,31 @@ hr {
 
 @media (min-width: 768px) {
 	
-	.main-header,
-	.nav {		
-		display: flex;		
-		flex-direction: column;		
+	ul, nav li {		
+		display: flex;				
 		background-color: transparent;
 	}
 
-	.nav {
+	li {
 		flex-direction: row;		
 	}			
 
-	.nav li a {
+	nav li a {
     	text-decoration: none;  	
     	
+	}
+
+	a.skills_link {
+	color: #a1eddf;	
+	}
+
+	a.portfolio_link {
+	color: #c7b5ed;
+	}
+
+	a.skills_link,
+	a.portfolio_link {
+		background-color: transparent;
 	}
 
 	.about {
@@ -261,16 +291,15 @@ hr {
 	}
 	
 	.main-header,
-	.nav,	
+	nav,	
 	.footer-nav {		
 		display: flex;		
-		flex-direction: row;	
-		justify-content: flex-end;			
+		flex-direction: row;				
 		background-color: transparent;		
 	}
 	
 
-	.nav li,
+	nav li,
 	.footer-nav li {
 		margin: 0 1em;
 	}

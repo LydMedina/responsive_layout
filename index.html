@@ -11,13 +11,15 @@
 
   <body> 
     <header class="main-header" id="top"> 
-      <a class="name" href="index.html">Lydia Medina</a>     
-        <ul class="nav">          
+      <a class="name" href="index.html">Lydia Medina</a>
+      <nav>     
+        <ul>          
           <li><a href="index.html">HOME</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio" class="portfolio_link">PORTFOLIO</a></li>
+          <li><a href="#skills" class="skills_link">SKILLS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>  
+      </nav>  
     </header> <!-- header end -->
 
       <div class="about">
@@ -29,10 +31,9 @@
       </div>
     </div><!-- about end -->
 
-    <div class="wrapper">
-      <h4 id="portfolio">PORTFOLIO</h4>  
-      <div class="portfolio-page">
-                                  
+    <div class="wrapper">      
+      <section class="portfolio-page">
+        <h4 id="portfolio">PORTFOLIO</h4>                                    
           <div class="col"><img src="Images/portfolio-1.png" alt="Marketing Image">
             <h3>Marketing Page</h3>
             <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p></div>
@@ -51,9 +52,9 @@
           <div class="col"><img src="Images/portfolio-4.png" alt="Calculator Image">
             <h3>Calculator</h3>
             <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p></div> 
-          </div> <!-- portfolio end -->
+          </section> <!-- portfolio end -->
 
-          <div class="skills-page">
+          <section class="skills-page">
             <h4 id="skills"> SKILLS</h4>
               <div class="col"><img src="Images/portfolio-7.png" alt="HTML">
                 <h3>HTML</h3>
@@ -73,14 +74,14 @@
               <div class="col"><img src="Images/portfolio-12.png" alt="WordPress">
                 <h3>WordPress</h3>
               </div> 
-            </div> <!-- skills end -->
+            </section> <!-- skills end -->
           </div> <!-- wrapper end -->
 
           <div id="contact">
             <h4>CONTACT</h4>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p>Phone <strong>+1 245-865-8954</strong></p>
-            <p>Email <strong>email@yoursite.com</strong></p>            
+            <p>Phone<a href="tel:+12458658954" class="phone">+1 (245) 865-8954</a></p>
+            <p>Email<a href="mailto:lydia.a.medina@gmail.com" class="email">lydia.a.medina@gmail.com</a></p>          
           </div> <!-- contact end -->
 
         <hr>
@@ -89,8 +90,8 @@
              <a class="footer-name" href="index.html">Lydia Medina</a>         
               <ul class="footer-nav">          
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#portfolio" class="portfolio_link">PORTFOLIO</a></li>
+                <li><a href="#skills" class="skills_link">SKILLS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
               </ul> <!-- footer-nav end -->       
               <div class="back-to-top">
